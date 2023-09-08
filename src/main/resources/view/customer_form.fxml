@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.stockmanagement.controller.CustomerFormController">
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.stockmanagement.controller.CustomerFormController">
    <children>
       <Label layoutX="128.0" layoutY="39.0" text="Customer Management" textFill="#280fea">
          <font>
@@ -28,6 +28,14 @@
          </cursor>
       </Button>
       <Button layoutX="391.0" layoutY="285.0" mnemonicParsing="false" style="-fx-background-color: lightblue;" text="Clear" textFill="#0d14ea">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="24.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="34.0" prefWidth="61.0" style="-fx-background-color: #cd84f1;" text="Back" textFill="#0d14ea">
          <font>
             <Font size="18.0" />
          </font>

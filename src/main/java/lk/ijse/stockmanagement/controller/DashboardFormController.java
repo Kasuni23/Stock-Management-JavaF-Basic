@@ -20,11 +20,13 @@ public class DashboardFormController {
 
         Scene scene = new Scene(rootNode);
 
-        Stage stage = new Stage();
-        stage.setScene(scene);
+//        Stage stage = new Stage();
+//        stage.setScene(scene);
+        Stage primaryStage = (Stage) this.rootNode.getScene().getWindow();
+        primaryStage.setScene(scene);
 
-        stage.setTitle("Customer Manage");
-        stage.show();
+        primaryStage.setTitle("Customer Manage");
+       // stage.show();
 
 
     }

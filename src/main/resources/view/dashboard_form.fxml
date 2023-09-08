@@ -32,13 +32,20 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button layoutX="396.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="72.0" prefWidth="98.0" style="-fx-background-color: #dfe4ea;" text="Item" textFill="#3111e7">
+      <Button layoutX="382.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="72.0" prefWidth="114.0" style="-fx-background-color: #dfe4ea;" text="Item" textFill="#3111e7">
          <font>
             <Font name="Bodoni MT" size="18.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/item.png.png" />
+               </image>
+            </ImageView>
+         </graphic>
       </Button>
       <Button layoutX="525.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="72.0" prefWidth="98.0" style="-fx-background-color: #dfe4ea;" text="Supplier" textFill="#280be7">
          <font>
