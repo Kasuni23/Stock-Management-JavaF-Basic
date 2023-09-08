@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="628.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.stockmanagement.controller.DashboardFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="184.0" layoutY="38.0" prefHeight="44.0" prefWidth="231.0" text="Dash Board" textFill="#d50ddc">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="38.0" />
+         </font>
+      </Label>
+      <Button layoutX="188.0" layoutY="149.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="76.0" prefWidth="165.0" style="-fx-background-color: #dfe4ea;" text="Customer" textFill="#2f08f2">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="63.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/customer.png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="396.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="72.0" prefWidth="98.0" style="-fx-background-color: #dfe4ea;" text="Item" textFill="#3111e7">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="525.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="72.0" prefWidth="98.0" style="-fx-background-color: #dfe4ea;" text="Supplier" textFill="#280be7">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="33.0" layoutY="150.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="114.0" style="-fx-background-color: #dfe4ea;" text="DashBoard" textFill="#2f08f2">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="node" layoutX="33.0" layoutY="249.0" prefHeight="358.0" prefWidth="554.0" style="-fx-background-color: #7efff5;">
+         <children>
+            <TableView layoutX="23.0" layoutY="25.0" prefHeight="326.0" prefWidth="499.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Date" />
+                <TableColumn prefWidth="75.0" text="Time" />
+                  <TableColumn prefWidth="320.79998779296875" text="Venue" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
